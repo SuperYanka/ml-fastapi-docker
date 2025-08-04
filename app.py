@@ -13,6 +13,7 @@ class InputData(BaseModel):
     feature1: float
     feature2: float
 
+
 # 👇 Шаг 2: POST-запрос на /predict
 @app.post("/predict")
 def predict(data: InputData):
@@ -22,3 +23,7 @@ def predict(data: InputData):
         "input": data.dict(),
         "prediction": prediction
     }
+
+@app.get("/")
+def root():
+    return {"message": "ML API is alive! 🔥 Try /docs"}
