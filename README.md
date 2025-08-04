@@ -17,7 +17,7 @@ This project:
 
 ## Demo
 
-> [API docs (Swagger)](https://your-render-url.onrender.com/docs)
+> [API docs (Swagger)](https://ml-fastapi-docker.onrender.com)
 > `POST /predict` — accepts JSON with features and returns the model prediction
 
 ---
